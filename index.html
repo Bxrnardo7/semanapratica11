@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de produtos com páginas de detalhes dinâmicas.">
+  <title>Vitrine | Mini Ecommerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Vitrine, página inicial"><span class="brand-mark">V</span>
+      vitrine<span class="brand-dot">.</span></a>
+    <span class="topbar-note">Tecnologia para o seu dia a dia</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MINI ECOMMERCE</p>
+        <h1>Encontre seu<br><span>próximo favorito.</span></h1>
+        <p class="hero-description">Explore nossa seleção de eletrônicos, acessórios e games. Clique em um produto para
+          ver todos os detalhes.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="hero-orbit orbit-one"></span><span
+          class="hero-orbit orbit-two"></span><span class="hero-spark">✦</span><span class="hero-device">⌁</span><span
+          class="hero-caption">TECH<br>FOR YOU</span></div>
+    </section>
+
+    <section class="catalog-section" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELEÇÃO DA LOJA</p>
+          <h2 id="catalog-title">Nossos produtos</h2>
+        </div>
+        <p id="product-count" class="product-count" aria-live="polite"></p>
+      </div>
+
+      <div class="catalog-controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search"
+            placeholder="Buscar produto..." aria-label="Buscar produto"></label>
+        <label class="filter-label" for="category-filter">Categoria</label>
+        <select id="category-filter" aria-label="Filtrar por categoria">
+          <option value="Todas">Todas as categorias</option>
+          <option value="Celulares">Celulares</option>
+          <option value="Notebooks">Notebooks</option>
+          <option value="Acessórios">Acessórios</option>
+          <option value="Games">Games</option>
+        </select>
+      </div>
+
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p id="empty-message" class="empty-message" hidden>Nenhum produto encontrado. Tente outra busca ou categoria.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><span>Vitrine<span class="brand-dot">.</span> Mini Ecommerce</span><span>Projeto acadêmico •
+      HTML, CSS e JavaScript</span></footer>
+</body>
+
+</html>
